@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+    --bg-one: rgb(116, 64, 199);
+    --bg-two: hsl(217, 19%, 35%);
+    --bg-four: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --cl-text: hsla(0, 0%, 81%,0.7);
+    --verified: hsla(210, 46%, 95%,0.5);
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: rgba(179, 206, 255, 0.2);
+}
+body {
+    font-size: 1.3rem;
+   
+}
+.main {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+
+}
+
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.l-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.l-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.l-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  
+}
+.l-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.3333%;
+   
+}
+.card {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 30px;
+    position: relative;
+    min-height: 260px;
+    box-shadow: 0 10px 15px rgba(0,0,0, 0.2);
+}
+.card__bg {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    z-index: -1;
+}
+.card--one {
+    background-color: var(--bg-one);
+    z-index: -2;
+}
+.card--two {
+    background-color: var(--bg-two);
+}
+.card.card--five {
+    height: 95.8%;
+}
+.card--four {
+    background-color: var(--bg-four);
+}
+.card__heading.card--black,
+.card__name.card--black {
+    color: hsl(219, 29%, 14%);
+}
+.card__verified.card--black-50 {
+    color: hsla(217, 19%, 35%,0.5);
+}
+.card__details.card--black-70 {
+    color: hsla(219, 29%, 14%,0.7);
+}
+.card__person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.card__img {
+    width: 40px;
+    height: 40px;;
+    border-radius: 50%;
+   
+}
+.card__img--boder {
+    border: 2px solid rgb(131, 74, 222);
+}
+.card__info {
+   margin-left: 16px;
+}
+
+.card__name {
+    font-weight: 500;
+    color: #fff;
+}
+
+.card__verified {
+    color: var(--verified);
+}
+
+.card__heading {
+    font-weight: 600;
+    color: #fff;
+     margin-bottom: 18px;
+}
+
+.card__details {
+    color: var(--cl-text);
+    margin-bottom: 8px;
+}
+
+
+.attribution {
+    margin-top: 20px;
+     font-size: 13px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 1024px)
+{
+    .row {
+       
+        margin-left: 0;
+        margin-right: 0;
+    
+    }
+    
+    .col {
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
